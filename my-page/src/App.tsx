@@ -9,7 +9,8 @@ function App() {
     <>
       {DATA.map((datas) => {
         return (
-          <div className="container">
+          <>
+            <div className="container">
             <h1>About me:</h1>
             <section>
               <h2>{datas["first name"]}</h2>
@@ -20,6 +21,7 @@ function App() {
               <p>{`📞 phone: ${datas["public contacts"].phone}, 📩email: ${datas["public contacts"].email}`}</p>
             </section>
           </div>
+          </>
         );
       })}
     </>
